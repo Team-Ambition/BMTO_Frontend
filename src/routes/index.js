@@ -24,14 +24,14 @@ export default function Router() {
       path: "/call",
       children: [
         { path: "", element: <Call /> },
-        { path: "FackTalk", element: <FaceTalk /> },
+        { path: "facetalk", element: <FaceTalk /> },
       ],
     },
     {
       path: "/",
       children: [
         { path: "/", element: <Home /> },
-        { path: "/Loading", element: <Loading /> },
+        { path: "/loading", element: <Loading /> },
         { path: "404", element: <Page404 /> },
         { path: "*", element: <Navigate to="/404" replace /> },
       ],
@@ -49,8 +49,6 @@ const Page404 = Loadable(lazy(() => import("../pages/Page404")));
 const Call = Loadable(lazy(() => import("../pages/Call")))
 
 const FaceTalk = Loadable(lazy(() => import("../pages/FaceTalk")))
-
-const Loading = Loadable(lazy(() => import("../pages/Loading")))
 
 const Login = Loadable(lazy(() => import("../pages/Login")));
 
