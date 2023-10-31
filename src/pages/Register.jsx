@@ -25,14 +25,8 @@ const Register = () => {
 
 			<div className='Register_Auth_Form'>
 				<img
-					src='../../Img/GitHubAuthIcon.svg'
-					alt=''
-					className='Register_Auth_Left'
-				/>
-				<img
 					src='../../Img/GoogleAuthIcon.svg'
 					alt=''
-					className='Register_Auth_Right'
 				/>
 			</div>
 
