@@ -37,7 +37,7 @@ body {
   
   .Login_Title {
     color: #7b7b79;
-    font-family: Inter;
+    font-family: "Sans_Bold";
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
@@ -116,5 +116,6 @@ body {
     margin-top: 2vh;
     color: #1609ae;
     cursor: pointer;
+    font-family: "Sans_Medium";
   }
   
