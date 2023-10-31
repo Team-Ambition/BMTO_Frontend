@@ -1,0 +1,120 @@
+body {
+    background-color: #e8e8e8;
+  }
+  
+  input {
+    border: none;
+    background-color: none;
+  }
+  
+  button {
+    border: none;
+    background-color: none;
+  }
+  
+  .Login_Container {
+    width: 32vw;
+    height: 75vh;
+    flex-shrink: 0;
+    border-radius: 18px;
+    background: #fff;
+    margin: auto;
+    margin-top: 15vh;
+    text-align: center;
+  }
+  
+  .Login_ProfileImg {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .Login_ProfileImg img {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .Login_Title {
+    color: #7b7b79;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 11vh;
+  }
+  
+  .Login_Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Login_Form input {
+    width: 22vw;
+    height: 6vh;
+    font-size: 15px;
+    text-indent: 15px;
+    border-radius: 8px;
+    background: #f1f1f1;
+    margin-top: 20px;
+  }
+  
+  .Login_Form button {
+    color: #fff;
+    width: 22vw;
+    height: 6vh;
+    font-size: 18px;
+    border-radius: 8px;
+    background-color: #3a7fc2;
+    margin-top: 25px;
+    cursor: pointer;
+  }
+  
+  .Login_Divider {
+    margin-top: 25px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    padding: 0px 80px 0px 80px;
+    cursor: pointer;
+  }
+  
+  .Login_Divider::before,
+  .Login_Divider::after {
+    content: "";
+    height: 1px;
+    background-color: #d9d9d9;
+    flex-grow: 1;
+  }
+  
+  .Login_Divider_InnerText {
+    border: 1px solid #d9d9d9;
+    color: gray;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 4px;
+    padding-right: 5px;
+  }
+  
+  .Login_Auth_Form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2vh;
+  }
+  
+  .Login_Auth_Form img {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+  }
+  
+  .Login_To_Register {
+    font-size: 18px;
+    margin-top: 2vh;
+    color: #1609ae;
+    cursor: pointer;
+  }
+  
