@@ -78,6 +78,10 @@
   font-size: 25px;
   margin-top: 25px;
   cursor: pointer;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
 }
 
 .DirectChat_to_GroupChat_Direct {
@@ -138,6 +142,11 @@
   flex-direction: column;
   justify-content: center;
   margin-left: 1vw;
+  width: 11.3vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
 }
 
 .FriendList_Info .Info_Name {
@@ -165,5 +174,21 @@
 }
 
 .MessageState_Time_Icon {
-  margin-left: 2.5vw;
+  text-align: right;
+}
+
+.MessageState_Unread_Container {
+}
+
+.MessageState_Unread {
+  text-align: center;
+  border-radius: 100%;
+  font-size: 14px;
+  background-color: black;
+  color: white;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  display: inline-block;
+  float: right;
 }
