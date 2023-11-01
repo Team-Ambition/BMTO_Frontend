@@ -37,18 +37,20 @@ const Chat = () => {
       </div>
 
       {chatType === "Direct" ? (
-        DirectList.map((item) => {
-          return (
-            <DirectChatList
-              img={item.img}
-              name={item.name}
-              msg={item.msg}
-              time={item.time}
-              unread={item.unread}
-              online={item.online}
-            />
-          );
-        })
+        <div className="DirectChat_Scroll">
+          {DirectList.map((item) => {
+            return (
+              <DirectChatList
+                img={item.img}
+                name={item.name}
+                msg={item.msg}
+                time={item.time}
+                unread={item.unread}
+                online={item.online}
+              />
+            );
+          })}
+        </div>
       ) : (
         <GroupChatList />
       )}
