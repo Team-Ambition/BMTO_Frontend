@@ -16,6 +16,7 @@ const Page404 = () => {
   useEffect(() => {
     const ImgNum = Math.round(Math.random() * 5);
     setRandomIcon(IconArray[ImgNum]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
