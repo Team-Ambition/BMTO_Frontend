@@ -1,0 +1,38 @@
+.DirectChat_Container {
+	width: 22vw;
+	height: 100vh;
+  background-color: #F3F5F7;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 47px;
+  padding-bottom: 27px;
+}
+
+.DirectChat_Header {
+  display: flex;
+  flex-direction: row;
+}
+
+.DirectChat_Header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  margin-right: 16px;
+}
+
+.DirectChat_UserInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.DirectChat_Header .UserName {
+  font-family: "Sans_Medium";
+  color: #3A7FC2;
+  font-size: 25px;
+}
+
+.DirectChat_Header .Abracadabra {
+  color: #737373;
+  font-size: 18px;
+}
