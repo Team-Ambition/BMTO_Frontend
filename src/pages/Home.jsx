@@ -1,11 +1,11 @@
 import React from 'react';
 
-import DirectChat from '../components/Sidebar/DirectChat'
+import Chat from '../components/Sidebar/Chat'
 
 const Home = () => {
   return (
     <div>
-      <DirectChat/>
+      <Chat/>
     </div>
   );
 }
