@@ -1,31 +1,22 @@
 import React from 'react';
-import { faker } from "@faker-js/faker";
-import './CSS/DirectChat.css'
+
+import './CSS/DirectChat.css';
+
+import Header from './Components/Header';
+import Searchbar from './Components/Searchbar';
 
 const DirectChat = () => {
-  return (
-    <div className='DirectChat_Container'>
-      <div className='DirectChat_Header'>
-        <img src={faker.image.avatar()} alt="" />
-        <div className='DirectChat_UserInfo'>
-          <p className='UserName'>{faker.internet.userName()}</p>
-          <p className='Abracadabra'>{faker.commerce.productName()}</p>
-        </div>
-      </div>
+	return (
+		<div className='DirectChat_Container'>
+			<Header />
 
-      <div className='DirectChat_Searchbar'>
+			<Searchbar/>
 
-      </div>
+			<div className='DirectChat_To_GroupChat'></div>
 
-      <div className='DirectChat_To_GroupChat'>
-
-      </div>
-
-      <div className='DirectChat_FriendList'>
-
-      </div>
-    </div>
-  );
-}
+			<div className='DirectChat_FriendList'></div>
+		</div>
+	);
+};
 
 export default DirectChat;
