@@ -1,108 +1,113 @@
 .Chat_Container {
-	width: 22vw;
-	height: 100vh;
-	background-color: #f3f5f7;
-	padding-left: 25px;
-	padding-right: 25px;
-	padding-top: 20px;
-	padding-bottom: 27px;
-	overflow: hidden;
-	box-sizing: border-box;
+  width: 22vw;
+  height: 100vh;
+  background-color: #f3f5f7;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 27px;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 /* Header */
 .Chat_Header {
-	display: flex;
-	flex-direction: row;
-	overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
   justify-content: space-between;
 }
 
 .Chat_Header img {
-	width: 60px;
-	height: 60px;
-	border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
   margin-right: 1vw;
 }
 
 .Chat_UserInfo {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 70%;
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	word-break: break-all;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
 }
 
 .Chat_Header .UserName {
-	font-family: 'Sans_Medium';
-	color: #3a7fc2;
-	font-size: 25px;
+  font-family: "Sans_Medium";
+  color: #3a7fc2;
+  font-size: 25px;
 }
 
 .Chat_Header .Abracadabra {
-	color: #737373;
-	font-size: 16px;
+  color: #737373;
+  font-size: 16px;
 }
 
 .Chat_Header .ChtaHeader_Icons {
-	color: black;
-	text-align: right;
+  color: black;
+  text-align: right;
 }
 
 /* Searchbar */
 .Chat_Searchbar {
-	display: flex;
-	flex-direction: row;
-	margin-top: 20px;
-	align-items: center;
-	width: 100%;
-	height: 5vh;
-	border-radius: 15px;
-	background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  align-items: center;
+  width: 100%;
+  height: 5vh;
+  border-radius: 15px;
+  background-color: #fff;
 }
 
 .Chat_Searchbar .Searchbar_Icon {
-	margin-left: 4%;
+  margin-left: 4%;
 }
 
 .Chat_Searchbar input {
-	width: 75%;
-	height: 100%;
-	color: #8d8d8d;
-	margin-left: 3%;
-	font-size: 18px;
-	border: none;
+  width: 75%;
+  height: 100%;
+  color: #8d8d8d;
+  margin-left: 3%;
+  font-size: 18px;
+  border: none;
 }
 
 .Chat_Searchbar input:focus {
-	outline: none;
+  outline: none;
 }
+
+#Hidden {
+  display: none;
+}
+
 
 /* DirectChat to GroupChat */
 .DirectChat_to_GroupChat {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	font-size: 25px;
-	margin-top: 25px;
-	cursor: pointer;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 25px;
+  margin-top: 25px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .DirectChat_to_GroupChat_Direct {
-	margin-left: 45px;
+  margin-left: 45px;
 }
 
 #DirectChat_to_GroupChat_Direct_Border {
-	border-bottom: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 .DirectChat_to_GroupChat_Group {
-	margin-right: 45px;
+  margin-right: 45px;
 }
