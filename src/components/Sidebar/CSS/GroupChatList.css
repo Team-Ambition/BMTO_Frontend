@@ -1,93 +1,92 @@
 /* FriendList */
 .GroupChat_FriendList_Container {
-    background-color: #fff;
-    width: 100%;
-    height: 10vh;
-    margin-top: 25px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
-  }
-  
-  .GroupChat_FriendList {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  .GroupChat_Scroll {
-    overflow: scroll;
-    height: 75vh;
-  }
-  .GroupChat_Scroll::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .GroupChat_Left {
-    display: flex;
-  }
-  
-  .Avatar_Img {
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    margin-left: 1vw;
-    line-height: 50px;
-    text-align: center;
-    margin-top: 1%;
-  }
-  
-  .FriendList_Info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 1vw;
-    width: 9vw;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    word-break: break-all;
-  }
-  
-  .FriendList_Info .Info_Name {
-    font-size: 18px;
-    font-family: "Sans_Medium";
-    color: #3a7fc2;
-  }
-  
-  .FriendList_Info .Info_LastMessage {
-    font-size: 15px;
-    color: #737373;
-  }
-  
-  .GroupChat_Right {
-    margin-right: 1vw;
-  }
-  
-  .MessageState {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .MessageState_Time {
-    margin-bottom: 1vh;
-  }
-  
-  .MessageState_Time_Icon {
-    text-align: right;
-  }
-  
-  .MessageState_Unread {
-    text-align: center;
-    border-radius: 100%;
-    font-size: 14px;
-    background-color: black;
-    color: white;
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
-    float: right;
-  }
-  
+	background-color: #fff;
+	width: 100%;
+	height: 10vh;
+	margin-top: 25px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.GroupChat_FriendList {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.GroupChat_Scroll {
+	overflow: scroll;
+	height: 75vh;
+}
+.GroupChat_Scroll::-webkit-scrollbar {
+	display: none;
+}
+
+.GroupChat_Left {
+	display: flex;
+}
+
+.Avatar_Img {
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	margin-left: 1vw;
+	line-height: 50px;
+	text-align: center;
+	margin-top: 1%;
+}
+
+.FriendList_Info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 1vw;
+	width: 9vw;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	word-break: break-all;
+}
+
+.FriendList_Info .Info_Name {
+	font-size: 18px;
+	font-family: 'Sans_Medium';
+	color: #3a7fc2;
+}
+
+.FriendList_Info .Info_LastMessage {
+	font-size: 15px;
+	color: #737373;
+}
+
+.GroupChat_Right {
+	margin-right: 1vw;
+}
+
+.MessageState {
+	display: flex;
+	flex-direction: column;
+}
+
+.MessageState_Time {
+	margin-bottom: 1vh;
+}
+
+.MessageState_Time_Icon {
+	text-align: right;
+}
+
+.MessageState_Unread {
+	text-align: center;
+	border-radius: 100%;
+	font-size: 14px;
+	background-color: black;
+	color: white;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	float: right;
+}
