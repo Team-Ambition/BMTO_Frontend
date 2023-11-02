@@ -12,16 +12,17 @@ import Search from "./Components/Search";
 const Chat = () => {
   const [chatType, setChatType] = useState("Direct");
   const [isSearchList, setIsSearchList] = useState(false);
-  const node = useRef();
 
   return (
     <div className="Chat_Container">
       <Header />
 
       <Searchbar setIsSearchList={setIsSearchList} />
-      <div id={isSearchList ? "" : "Hidden"}>
-        <Search />
-      </div>
+      {
+        <div id={isSearchList ? "" : "Hidden"}>
+          <Search setIsSearchList={setIsSearchList} />
+        </div>
+      }
 
       <div className="DirectChat_to_GroupChat">
         <p
