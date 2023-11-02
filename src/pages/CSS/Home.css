@@ -1,0 +1,13 @@
+/* Home */
+.Home_Container {
+  display: flex;
+}
+
+.Home_Main {
+  display: flex;
+  flex-direction: column;
+}
+
+.Home_Chat_Info {
+  background-color: white;
+}
