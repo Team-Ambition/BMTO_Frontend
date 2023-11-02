@@ -1,5 +1,5 @@
 .DirectChat_Container {
-  width: 25vw;
+  width: 22vw;
   height: 100vh;
   background-color: #f3f5f7;
   padding-left: 25px;
@@ -17,8 +17,8 @@
 }
 
 .Chat_Header img {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border-radius: 100%;
   margin-right: 16px;
 }
@@ -37,7 +37,7 @@
 
 .Chat_Header .Abracadabra {
   color: #737373;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /* Searchbar */
@@ -46,9 +46,8 @@
   flex-direction: row;
   margin-top: 20px;
   align-items: center;
-  text-align: center;
-  width: 22vw;
-  height: 4.5vh;
+  width: 100%;
+  height: 5vh;
   border-radius: 15px;
   background-color: #fff;
 }
@@ -58,7 +57,7 @@
 }
 
 .Chat_Searchbar input {
-  width: 80%;
+  width: 75%;
   height: 100%;
   color: #8d8d8d;
   margin-left: 3%;
@@ -85,7 +84,7 @@
 }
 
 .DirectChat_to_GroupChat_Direct {
-  margin-left: 62px;
+  margin-left: 45px;
 }
 
 #DirectChat_to_GroupChat_Direct_Border {
@@ -93,7 +92,7 @@
 }
 
 .DirectChat_to_GroupChat_Group {
-  margin-right: 62px;
+  margin-right: 45px;
 }
 
 /* FriendList */
@@ -142,7 +141,7 @@
   flex-direction: column;
   justify-content: center;
   margin-left: 1vw;
-  width: 11.3vw;
+  width: 9vw;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -150,18 +149,18 @@
 }
 
 .FriendList_Info .Info_Name {
-  font-size: 23px;
+  font-size: 18px;
   font-family: "Sans_Medium";
   color: #3a7fc2;
 }
 
 .FriendList_Info .Info_LastMessage {
-  font-size: 18px;
+  font-size: 15px;
   color: #737373;
 }
 
 .DirectChat_Right {
-  margin-right: 1.5vw;
+  margin-right: 1vw;
 }
 
 .MessageState {
