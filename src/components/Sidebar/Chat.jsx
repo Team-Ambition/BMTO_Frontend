@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import DirectList from "../../Data/DirectList";
+import GroupList from "../../Data/GroupList";
 import "./CSS/Chat.css";
 
 import Header from "./Components/Header";
@@ -10,7 +11,7 @@ import GroupChatList from "./GroupChatList";
 const Chat = () => {
   const [chatType, setChatType] = useState("Direct");
   return (
-    <div className="DirectChat_Container">
+    <div className="Chat_Container">
       <Header />
 
       <Searchbar />
@@ -52,7 +53,20 @@ const Chat = () => {
           })}
         </div>
       ) : (
-        <GroupChatList />
+        <div className="GroupChat_Scroll">
+          {GroupList.map((item) => {
+            return (
+              <GroupChatList
+                img={item.img}
+                name={item.name}
+                msg={item.msg}
+                time={item.time}
+                unread={item.unread}
+                online={item.online}
+              />
+            );
+          })}
+        </div>
       )}
     </div>
   );

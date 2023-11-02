@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { BsCheckCircleFill } from 'react-icons/bs';
+import './CSS/DirectChatList.css'
 
 const DirectChatList = ({ img, name, msg, time, unread, online }) => {
 	return (
