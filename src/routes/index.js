@@ -40,15 +40,14 @@ export default function Router() {
   ]);
 }
 
-
 //Pages
 const Home = Loadable(lazy(() => import("../pages/Home")));
 
 const Page404 = Loadable(lazy(() => import("../pages/Page404")));
 
-const Call = Loadable(lazy(() => import("../pages/Call")))
+const Call = Loadable(lazy(() => import("../pages/Call")));
 
-const FaceTalk = Loadable(lazy(() => import("../pages/FaceTalk")))
+const FaceTalk = Loadable(lazy(() => import("../pages/FaceTalk")));
 
 const Login = Loadable(lazy(() => import("../pages/Login")));
 

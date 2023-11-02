@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import DirectList from "../../Data/DirectList";
 import GroupList from "../../Data/GroupList";
 import "./CSS/Chat.css";
@@ -7,14 +7,21 @@ import Header from "./Components/Header";
 import Searchbar from "./Components/Searchbar";
 import DirectChatList from "./DirectChatList";
 import GroupChatList from "./GroupChatList";
+import Search from "./Components/Search";
 
 const Chat = () => {
   const [chatType, setChatType] = useState("Direct");
+  const [isSearchList, setIsSearchList] = useState(false);
+  const node = useRef();
+
   return (
     <div className="Chat_Container">
       <Header />
 
-      <Searchbar />
+      <Searchbar setIsSearchList={setIsSearchList} />
+      <div id={isSearchList ? "" : "Hidden"}>
+        <Search />
+      </div>
 
       <div className="DirectChat_to_GroupChat">
         <p
