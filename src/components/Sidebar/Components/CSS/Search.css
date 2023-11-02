@@ -8,16 +8,21 @@
   border-radius: 10px;
   position: absolute;
   left: 2%;
+  overflow: scroll;
 }
+.Search_Container::-webkit-scrollbar {
+  display: none;
+}
+
 .SearchList_Container {
   background-color: #f3f5f7;
   width: 17vw;
-  height: 12vh;
   margin-top: 10px;
   margin-bottom: 5px;
   display: flex;
   border-radius: 10px;
   align-items: center;
+  padding: 10px 0 10px 0;
 }
 
 .Search_Img {
