@@ -7,6 +7,7 @@ const Searchbar = ({ setIsSearchList }) => {
       className="Chat_Searchbar"
       onClick={() => {
         setIsSearchList(true);
+        document.body.style.overflow = "hidden";
       }}
     >
       <FiSearch size={22} className="Searchbar_Icon" />

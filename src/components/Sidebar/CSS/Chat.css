@@ -111,3 +111,7 @@
 .DirectChat_to_GroupChat_Group {
   margin-right: 45px;
 }
+
+#No_Scroll {
+  overflow: hidden;
+}
