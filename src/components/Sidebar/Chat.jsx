@@ -1,7 +1,9 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
+
+import "./CSS/Chat.css";
+
 import DirectList from "../../Data/DirectList";
 import GroupList from "../../Data/GroupList";
-import "./CSS/Chat.css";
 
 import Header from "./Components/Header";
 import Searchbar from "./Components/Searchbar";
@@ -45,37 +47,42 @@ const Chat = () => {
         </p>
       </div>
 
-      {chatType === "Direct" ? (
-        <div className="DirectChat_Scroll">
-          {DirectList.map((item) => {
-            return (
-              <DirectChatList
-                img={item.img}
-                name={item.name}
-                msg={item.msg}
-                time={item.time}
-                unread={item.unread}
-                online={item.online}
-              />
-            );
-          })}
-        </div>
-      ) : (
-        <div className="GroupChat_Scroll">
-          {GroupList.map((item) => {
-            return (
-              <GroupChatList
-                img={item.img}
-                name={item.name}
-                msg={item.msg}
-                time={item.time}
-                unread={item.unread}
-                online={item.online}
-              />
-            );
-          })}
-        </div>
-      )}
+      <div>
+        {chatType === "Direct" ? (
+          <div
+            className="DirectChat_Scroll"
+            id={isSearchList ? "No_Scroll" : ""}
+          >
+            {DirectList.map((item) => {
+              return (
+                <DirectChatList
+                  img={item.img}
+                  name={item.name}
+                  msg={item.msg}
+                  time={item.time}
+                  unread={item.unread}
+                  online={item.online}
+                />
+              );
+            })}
+          </div>
+        ) : (
+          <div className="GroupChat_Scroll">
+            {GroupList.map((item) => {
+              return (
+                <GroupChatList
+                  img={item.img}
+                  name={item.name}
+                  msg={item.msg}
+                  time={item.time}
+                  unread={item.unread}
+                  online={item.online}
+                />
+              );
+            })}
+          </div>
+        )}
+      </div>
     </div>
   );
 };
