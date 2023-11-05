@@ -1,5 +1,5 @@
-import React from "react";
-import "./CSS/Home.css";
+import React, { useState } from 'react';
+import './CSS/Home.css';
 
 import Header from "../components/Header/Header";
 import Chat from "../components/Sidebar/Chat";
@@ -7,18 +7,25 @@ import Typing from "../components/Typing/Typing";
 import Info from "../components/Info/Info";
 
 const Home = () => {
-  return (
-    <div className="Home_Container">
-      <Chat />
+	const [isInfoOpen, setIsInfoOpen] = useState(false);
 
-      <div className="Home_Main">
-        <Header />
+	const getInfoState = (State) => {
+		setIsInfoOpen(State);
+		console.log(isInfoOpen);
+	};
+
+	return (
+		<div className='Home_Container'>
+			<Chat />
+
+			<div className='Home_Main'>
+				<Header getInfoState={getInfoState} />
         <Typing />
-      </div>
+			</div>
 
-      <div className="Home_Chat_Info"></div>
-    </div>
-  );
+			<div className='Home_Chat_Info'>{isInfoOpen ? <Info /> : null}</div>
+		</div>
+	);
 };
 
 export default Home;
