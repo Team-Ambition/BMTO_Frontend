@@ -19,7 +19,7 @@ const Header = ({ getInfoState }) => {
 	};
 
 	return (
-		<div className='Header_Container'>
+		<div className='Header_Container' id={isInfoModal ? 'StateInfoFalse' : 'StateInfoTrue'}>
 			<div className='Header_Profile'>
 				<img src={faker.image.avatar()} alt='' className='Header_Img' />
 				<p className='Header_P'>{faker.internet.userName()}</p>
