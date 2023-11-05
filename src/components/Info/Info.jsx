@@ -20,12 +20,12 @@ const Info = () => {
 					</div>
 
 					<div className='Info_Change_Group_IMG'>
-						<p>Change Group Image</p>
+						<p>Change Image</p>
 						<button>Change</button>
 					</div>
 
 					<div className='Info_Change_Group_Name'>
-						<p>Change Group Name</p>
+						<p>Change Name</p>
 						<button>Change</button>
 					</div>
 
