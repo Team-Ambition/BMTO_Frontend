@@ -20,7 +20,7 @@ const Home = () => {
 
 			<div className='Home_Main'>
 				<Header getInfoState={getInfoState} />
-        <Typing />
+        <Typing isInfoOpen={isInfoOpen} />
 			</div>
 
 			<div className='Home_Chat_Info'>{isInfoOpen ? <Info /> : null}</div>
