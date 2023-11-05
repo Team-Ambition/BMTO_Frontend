@@ -1,6 +1,7 @@
 .Header_Container {
   display: flex;
-  width: 78vw;
+  /* width: 78vw; */
+  width: 60vw;
   height: 8vh;
   background-color: white;
   justify-content: space-between;

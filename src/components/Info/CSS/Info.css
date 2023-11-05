@@ -1,0 +1,127 @@
+.Info_Container {
+	width: 20vw;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-left: 1px solid #d9d9d9;
+}
+
+.Info_Title {
+	font-size: 32px;
+	margin-top: 15px;
+	margin-left: 20px;
+}
+
+.Info_Main {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 10px 40px 34px 40px;
+}
+
+.Info_Group_IMG img {
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	margin-top: 35px;
+}
+
+.Info_GroupName {
+	font-size: 30px;
+	text-align: center;
+}
+
+.Info_Change_Group_IMG {
+	display: flex;
+	flex-direction: row;
+	justify-items: center;
+	justify-content: space-between;
+	margin-top: 35px;
+	font-size: 18px;
+}
+
+.Info_Change_Group_IMG button {
+	border: none;
+	background-color: #efefef;
+	padding: 8px 10px 8px 10px;
+	border-radius: 7px;
+}
+
+.Info_Change_Group_Name {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	justify-items: center;
+	justify-content: space-between;
+	margin-top: 20px;
+	font-size: 18px;
+}
+
+.Info_Change_Group_Name button {
+	border: none;
+	background-color: #efefef;
+	padding: 8px 10px 8px 10px;
+	border-radius: 7px;
+}
+
+.Info_Add_Member {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	justify-items: center;
+	justify-content: space-between;
+	margin-top: 40px;
+	font-size: 25px;
+}
+
+.Info_Add_Member button {
+	border: none;
+	color: #4193ef;
+	background-color: transparent;
+	font-size: 18px;
+}
+
+.Info_Member_Container {
+	margin-top: 4px;
+	height: 40vh;
+	overflow: scroll;
+}
+
+.Info_Member {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	margin-top: 20px;
+}
+
+.Info_Member img {
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	margin-right: 10px;
+}
+
+.Info_Member p {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+	font-size: 18px;
+	width: 11vw;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.Info_Divider {
+	border-top: 1px solid #d9d9d9;
+	text-align: left;
+	padding: 15px 0px 15px 15px;
+}
+
+.Info_Divider p {
+	color: red;
+	font-size: 20px;
+	font-family: 'Sans_Light';
+}
