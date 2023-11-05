@@ -7,17 +7,21 @@ import Info from '../components/Info/Info';
 
 const Home = () => {
 	const [isInfoOpen, setIsInfoOpen] = useState(false);
+
+	const getInfoState = (State) => {
+		setIsInfoOpen(State);
+		console.log(isInfoOpen);
+	};
+
 	return (
 		<div className='Home_Container'>
 			<Chat />
 
 			<div className='Home_Main'>
-				<Header />
+				<Header getInfoState={getInfoState} />
 			</div>
 
-			<div className='Home_Chat_Info'>
-				<Info />
-			</div>
+			<div className='Home_Chat_Info'>{isInfoOpen ? <Info /> : null}</div>
 		</div>
 	);
 };
