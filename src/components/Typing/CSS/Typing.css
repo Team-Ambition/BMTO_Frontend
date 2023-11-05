@@ -1,6 +1,5 @@
 .Typing_Container {
   border-radius: 50px;
-  width: 76vw;
   height: 5vh;
   border: solid #d9d9d9 3px;
   display: flex;
@@ -8,6 +7,14 @@
   justify-content: space-between;
   margin-bottom: 15px;
 }
+
+#StateTypeTrue {
+  width: 56vw;
+}
+#StateTypeFalse {
+  width: 76vw;
+}
+
 
 .Typing_Input {
   margin-left: 20px;
