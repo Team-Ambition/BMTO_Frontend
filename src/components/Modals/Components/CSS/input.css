@@ -1,0 +1,30 @@
+.Input_Container {
+	display: flex;
+	flex-direction: column;
+}
+
+.EditProfile_Title {
+	font-family: 'Sans_Bold';
+}
+
+.Input_Container label {
+	font-family: 'Sans_Medium';
+}
+
+.Input_Container input {
+	height: 35px;
+	border-radius: 5px;
+	border: 0.5px solid #9e9e9e;
+	background-채: #fff;
+	font-size: 18px;
+	font-family: 'Sans_Light';
+	text-indent: 10px;
+}
+
+.Input_Container input:focus {
+	outline: none;
+}
+
+.Input_Disable {
+	background-color: #c1c1c1;
+}

@@ -11,7 +11,6 @@ const Home = () => {
 
 	const getInfoState = (State) => {
 		setIsInfoOpen(State);
-		console.log(isInfoOpen);
 	};
 
 	return (

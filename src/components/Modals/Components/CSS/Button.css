@@ -1,0 +1,41 @@
+.RedButton {
+	background-color: #e05040;
+	border-radius: 10px;
+	border: 1px solid #9e9e9e;
+  padding: 11px;
+  color: #FFF;
+
+  font-family: 'Sans_Headline';
+  font-size: 16px;
+  
+  cursor: pointer;
+}
+
+.WhiteButton {
+  background-color: #FFF;
+  border-radius: 10px;
+	border: 1px solid #9e9e9e;
+  padding: 11px;
+  width: 80px;
+
+  font-family: 'Sans_Headline';
+  font-size: 16px;
+  
+  cursor: pointer;
+}
+
+.BuleButton {
+  background-color: #3A7FC2;
+  border-radius: 10px;
+	border: 1px solid #9e9e9e;
+  padding: 10px;
+  color: #FFF;
+  width: 90px;
+
+  font-family: 'Sans_Headline';
+  font-size: 16px;
+
+  margin-left: 15px;
+
+  cursor: pointer;
+}
