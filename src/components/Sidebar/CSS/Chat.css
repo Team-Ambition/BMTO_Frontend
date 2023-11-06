@@ -19,7 +19,13 @@
 	justify-content: space-between;
 }
 
-.Chat_Header img {
+.ChatHeader_IMG {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.ChatHeader_IMG img {
 	width: 60px;
 	height: 60px;
 	border-radius: 100%;
@@ -51,6 +57,10 @@
 .Chat_Header .ChtaHeader_Icons {
 	color: black;
 	text-align: right;
+}
+
+.ChtaHeader_Icons {
+	margin-left: 10px;
 }
 
 /* DarkMode */

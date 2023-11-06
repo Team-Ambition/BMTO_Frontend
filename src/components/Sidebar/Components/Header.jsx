@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { faker } from '@faker-js/faker';
 
 import { IoSettingsOutline } from 'react-icons/io5';
-import { BsToggleOff, BsToggleOn } from 'react-icons/bs';
 import EditProfile from '../../Modals/EditProfile';
 
 const Header = () => {
@@ -26,7 +25,7 @@ const Header = () => {
 
 	return (
 		<div className='Chat_Header'>
-			<img src={faker.image.avatar()} alt='' />
+			<div className='ChatHeader_IMG'><img src={faker.image.avatar()} alt='' /></div>
 			<div className='Chat_UserInfo'>
 				<p className='UserName'>{faker.internet.userName()}</p>
 				<p className='Abracadabra'>{faker.commerce.productName()}</p>
