@@ -5,7 +5,7 @@ import { IoCallOutline } from 'react-icons/io5';
 import { AiOutlineInfoCircle, AiFillInfoCircle } from 'react-icons/ai';
 import { FiVideo } from 'react-icons/fi';
 
-const Header = ({ getInfoState }) => {
+const Header = ({ getInfoState, isDirectGroup }) => {
 	const [isInfoModal, setIsInfoModal] = useState(true);
 
 	const setInfoStateTrue = () => {
@@ -19,7 +19,10 @@ const Header = ({ getInfoState }) => {
 	};
 
 	return (
-		<div className='Header_Container' id={isInfoModal ? 'StateInfoFalse' : 'StateInfoTrue'}>
+		<div
+			className='Header_Container'
+			id={isInfoModal ? 'StateInfoFalse' : 'StateInfoTrue'}
+		>
 			<div className='Header_Profile'>
 				<img src={faker.image.avatar()} alt='' className='Header_Img' />
 				<p className='Header_P'>{faker.internet.userName()}</p>
@@ -27,7 +30,9 @@ const Header = ({ getInfoState }) => {
 			<div className='Header_Options'>
 				<IoCallOutline size={30} className='Header_Icon' />
 				<FiVideo size={30} className='Header_Icon' />
-				{isInfoModal ? (
+				{isDirectGroup === 'Direct' ? (
+					''
+				) : isInfoModal ? (
 					<AiOutlineInfoCircle
 						size={30}
 						className='Header_Icon'
