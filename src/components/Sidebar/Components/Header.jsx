@@ -6,11 +6,10 @@ import EditProfile from '../../Modals/EditProfile';
 
 const Header = () => {
 	const [windowType, setWindowType] = useState(false);
-	
+
 	const changeWindowType = () => {
-			localStorage.setItem('WindowType', !windowType);
-			setWindowType(!windowType);
-		
+		localStorage.setItem('WindowType', !windowType);
+		setWindowType(!windowType);
 	};
 
 	const [isOpenSettingModal, setIstOpenSettingModal] = useState(false);
@@ -25,17 +24,23 @@ const Header = () => {
 
 	return (
 		<div className='Chat_Header'>
-			<div className='ChatHeader_IMG'><img src={faker.image.avatar()} alt='' /></div>
+			<div className='ChatHeader_IMG'>
+				<img src={faker.image.avatar()} alt='' />
+			</div>
 			<div className='Chat_UserInfo'>
 				<p className='UserName'>{faker.internet.userName()}</p>
 				<p className='Abracadabra'>{faker.commerce.productName()}</p>
 			</div>
 			<div className='ChtaHeader_Icons'>
 				<div>
-						<label class='ChatHeader_Switch_Button'>
-							<input type='checkbox' onClick={changeWindowType} checked={windowType}/>
-							<span class='slider round'></span>
-						</label>
+					<label class='ChatHeader_Switch_Button'>
+						<input
+							type='checkbox'
+							onClick={changeWindowType}
+							checked={windowType}
+						/>
+						<span class='slider round'></span>
+					</label>
 				</div>
 				<div>
 					<IoSettingsOutline
@@ -53,10 +58,10 @@ const Header = () => {
 				}
 			></div>
 			{isOpenSettingModal ? (
-				<EditProfile getInfoState={getInfoState} />
-			) : (
-				''
-			)}
+				<div>
+					<EditProfile getInfoState={getInfoState} />
+				</div>
+			) : null}
 		</div>
 	);
 };

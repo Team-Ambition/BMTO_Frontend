@@ -36,6 +36,8 @@
 .EditProfile_ProfileImg img {
   width: 85px;
   height: 85px;
+  border-radius: 100%;
+  margin-right: 10px;
 }
 
 .EditProfile_ProfileImg label {
@@ -59,4 +61,3 @@
   flex-direction: row;
   justify-content: space-between;
 }
-

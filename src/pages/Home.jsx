@@ -13,12 +13,18 @@ const Home = () => {
 		setIsInfoOpen(State);
 	};
 
+	const [isDirectGroup, setIstDirectGroup] = useState(true)
+
+	const getDirectGroup = (State) => {
+		setIstDirectGroup(State)
+	}
+
 	return (
 		<div className='Home_Container'>
-			<Chat />
+			<Chat getDirectGroup={getDirectGroup}/>
 
 			<div className='Home_Main'>
-				<Header getInfoState={getInfoState} />
+				<Header getInfoState={getInfoState} isDirectGroup={isDirectGroup} />
         <Typing isInfoOpen={isInfoOpen} />
 			</div>
 
