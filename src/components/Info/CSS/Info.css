@@ -8,6 +8,10 @@
 	border-left: 1px solid #d9d9d9;
 }
 
+.Info_Container::before {
+	animation: fadeout 0.5s;
+}
+
 .Info_Title {
 	font-size: 25px;
 	margin-top: 15px;
@@ -132,6 +136,16 @@
 @keyframes fadein {
 	0% {
 		transform: translateX(100%);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes fadeout {
+	0% {
+		transform: translateX(-100%);
 	}
 
 	100% {

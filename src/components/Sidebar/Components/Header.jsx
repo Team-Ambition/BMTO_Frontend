@@ -37,7 +37,7 @@ const Header = () => {
 					)}
 				</div>
 				<div>
-					<IoSettingsOutline size={25} />
+					<IoSettingsOutline size={25} className='Chat_Header_SettingIcon' />
 				</div>
 			</div>
 		</div>

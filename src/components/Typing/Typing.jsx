@@ -19,9 +19,9 @@ const Typing = ({ isInfoOpen }) => {
         />
       </div>
       <div className="Typing_Files">
-        <BsMic size={25} className="Typing_File" />
-        <CiImageOn size={30} className="Typing_File" />
-        <AiOutlinePaperClip size={30} className="Typing_Name" />
+        <BsMic size={25} className="Typing_File Typing_Icon" />
+        <CiImageOn size={30} className="Typing_File Typing_Icon" />
+        <AiOutlinePaperClip size={30} className="Typing_Name Typing_Icon" />
       </div>
     </div>
   );
