@@ -1,10 +1,21 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './CSS/EditProfile.css';
 import Input from './Components/input';
 import { faker } from '@faker-js/faker';
 import Button from './Components/Button';
 
 const EditProfile = ({ getInfoState }) => {
+	const imgRef = useRef();
+	const [imgFile, setImgFile] = useState(faker.image.avatar())
+	const saveImgFile = () => {
+		const file = imgRef.current.files[0];
+		const reader = new FileReader();
+		reader.readAsDataURL(file);
+		reader.onloadend = () => {
+			setImgFile(reader.result);
+		};
+	};
+
 	const wrapperRef = useRef(null);
 
 	const handleClickOutside = (event) => {
@@ -13,9 +24,9 @@ const EditProfile = ({ getInfoState }) => {
 		}
 	};
 
-  const CloseModal = () => {
-    getInfoState(false)
-  }
+	const CloseModal = () => {
+		getInfoState(false);
+	};
 
 	useEffect(() => {
 		const handleOutsideClick = (event) => handleClickOutside(event);
@@ -35,9 +46,9 @@ const EditProfile = ({ getInfoState }) => {
 
 			<div className='EditProfile_Main'>
 				<div className='EditProfile_ProfileImg'>
-					<img src={faker.image.avatar()} alt='' />
+					<img src={imgFile} alt='' />
 					<label for='Input_File'>Upload</label>
-					<input id='Input_File' type='file' />
+					<input id='Input_File' type='file' onChange={saveImgFile} ref={imgRef} />
 				</div>
 
 				<div className='EditProfile_Inputs'>
@@ -53,7 +64,7 @@ const EditProfile = ({ getInfoState }) => {
 				<div className='EditProfile_Buttons'>
 					<Button text={'Delete Account'} type={'Red'} />
 					<div className='EditProfile_Buttons'>
-						<Button text={'Cancel'} onClickMethod={CloseModal}/>
+						<Button text={'Cancel'} onClickMethod={CloseModal} />
 						<Button text={'Done'} type={'Blue'} ml={'36px'} />
 					</div>
 				</div>
