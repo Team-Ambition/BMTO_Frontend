@@ -1,0 +1,47 @@
+.Chat_Searchbar {
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+	align-items: center;
+	width: 100%;
+	height: 5vh;
+	border-radius: 15px;
+	background-color: #fff;
+}
+
+.Chat_Searchbar .Searchbar_Icon {
+	margin-left: 4%;
+}
+
+.Chat_Searchbar input {
+	width: 75%;
+	height: 100%;
+	color: #8d8d8d;
+	margin-left: 3%;
+	font-size: 18px;
+	border: none;
+}
+
+.Chat_Searchbar input:focus {
+	outline: none;
+}
+
+#Hidden {
+	display: none;
+}
+
+.Chat_Header_SettingIcon {
+	border-radius: 30%;
+	padding: 5px;
+}
+
+.Chat_Header_SettingIcon:hover {
+	background-color: #ebebeb;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+		box-shadow 0.2s ease-in-out;
+}
+
+.Chat_Header_SettingIcon:not(:hover) {
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+		box-shadow 0.2s ease-in-out;
+}

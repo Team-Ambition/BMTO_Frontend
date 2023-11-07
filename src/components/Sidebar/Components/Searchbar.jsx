@@ -1,5 +1,6 @@
 import React from "react";
 import { FiSearch } from "react-icons/fi";
+import './CSS/Searchbar.css'
 
 const Searchbar = ({ setIsSearchList }) => {
   return (
