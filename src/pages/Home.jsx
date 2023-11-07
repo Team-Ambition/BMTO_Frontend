@@ -5,6 +5,7 @@ import Header from "../components/Header/Header";
 import Chat from "../components/Sidebar/Chat";
 import Typing from "../components/Typing/Typing";
 import Info from "../components/Info/Info";
+import ChangeGroupName from '../components/Modals/GroupModals/ChangeGroupName';
 
 const Home = () => {
 	const [isInfoOpen, setIsInfoOpen] = useState(false);
