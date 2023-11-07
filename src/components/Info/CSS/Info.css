@@ -70,6 +70,17 @@
 	border-radius: 7px;
 }
 
+.Info_Change_Hover:hover {
+	background-color: #ebebeb;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+		box-shadow 0.2s ease-in-out;
+}
+
+.Info_Change_Hover:not(:hover) {
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+		box-shadow 0.2s ease-in-out;
+}
+
 .Info_Add_Member {
 	display: flex;
 	flex-direction: row;
@@ -131,6 +142,21 @@
 	color: red;
 	font-size: 20px;
 	font-family: 'Sans_Light';
+}
+
+.Info_Modal_Background_Open {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #E5E7EB;
+	opacity: 0.5;
+}
+
+.Info_Modal_Background_Close {
+	display: none;
 }
 
 @keyframes fadein {

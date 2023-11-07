@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../Info/CSS/Info.css';
 import { faker } from '@faker-js/faker';
 
 import GroupMember from '../../Data/GroupMember';
+import ChangeGroupImg from '../Modals/GroupModals/ChangeGroupImg';
 
 const Info = () => {
+	const [isOpenChageIMG, setOpenChangeIMG] = useState(false);
+	const ChangeIMG = () => {
+		setOpenChangeIMG(!isOpenChageIMG);
+	};
+
+	const getChangeImgState = (State) => {
+		setOpenChangeIMG(State);
+	};
+
 	return (
 		<div className='Info_Container'>
 			<div>
@@ -21,12 +31,17 @@ const Info = () => {
 
 					<div className='Info_Change_Group_IMG'>
 						<p>Change Image</p>
-						<button>Change</button>
+						<button
+							className='Info_Change_Hover'
+							onClick={ChangeIMG}
+						>
+							Change
+						</button>
 					</div>
 
 					<div className='Info_Change_Group_Name'>
 						<p>Change Name</p>
-						<button>Change</button>
+						<button className='Info_Change_Hover'>Change</button>
 					</div>
 
 					<div>
@@ -49,6 +64,21 @@ const Info = () => {
 			<div className='Info_Divider'>
 				<p>Leave The Group</p>
 			</div>
+
+			{/* 모달 백그라운드 */}
+			<div
+				className={
+					isOpenChageIMG
+						? 'Info_Modal_Background_Open'
+						: 'Info_Modal_Background_Close'
+				}
+			></div>
+
+			{isOpenChageIMG ? (
+				<div>
+					<ChangeGroupImg getChangeImgState={getChangeImgState} />
+				</div>
+			) : null}
 		</div>
 	);
 };
