@@ -5,6 +5,7 @@ import { faker } from '@faker-js/faker';
 import GroupMember from '../../Data/GroupMember';
 import ChangeGroupImg from '../Modals/GroupModals/ChangeGroupImg';
 import ChangeGroupName from '../Modals/GroupModals/ChangeGroupName';
+import LeaveTheGroup from '../Modals/GroupModals/LeaveTheGroup';
 
 const Info = () => {
 	// 이미지 변경모달 State
@@ -18,13 +19,23 @@ const Info = () => {
 	};
 
 	// 이름 변경모달 State
-	const [isOpenChageName, setOpenChangeName] = useState(false);
+	const [isOpenChangeName, setOpenChangeName] = useState(false);
 	const ChangeName = () => {
-		setOpenChangeName(!isOpenChageIMG);
+		setOpenChangeName(!isOpenChangeName);
 	};
 
 	const getChangeNameState = (State) => {
 		setOpenChangeName(State);
+	};
+
+	// 이름 변경모달 State
+	const [isOpenLeaveTheGroup, setOpenLeaveTheGroup] = useState(false);
+	const LeaveTheGroupState = () => {
+		setOpenLeaveTheGroup(!isOpenLeaveTheGroup);
+	};
+
+	const getLeaveTheGroupState = (State) => {
+		setOpenLeaveTheGroup(State);
 	};
 
 	return (
@@ -83,14 +94,15 @@ const Info = () => {
 				</div>
 			</div>
 
-			<div className='Info_Divider'>
+			{/* 그룹나가기 */}
+			<div className='Info_Divider' onClick={LeaveTheGroupState}>
 				<p>Leave The Group</p>
 			</div>
 
 			{/* 모달 백그라운드 */}
 			<div
 				className={
-					isOpenChageIMG || isOpenChageName
+					isOpenChageIMG || isOpenChangeName || isOpenLeaveTheGroup
 						? 'Info_Modal_Background_Open'
 						: 'Info_Modal_Background_Close'
 				}
@@ -104,9 +116,18 @@ const Info = () => {
 			) : null}
 
 			{/* 이름 변경 모달 */}
-			{isOpenChageName ? (
+			{isOpenChangeName ? (
 				<div>
-					<ChangeGroupName getChangeNameState={getChangeNameState}/>
+					<ChangeGroupName getChangeNameState={getChangeNameState} />
+				</div>
+			) : null}
+
+			{/* 그룹나가기 */}
+			{isOpenLeaveTheGroup ? (
+				<div>
+					<LeaveTheGroup
+						getLeaveTheGroupState={getLeaveTheGroupState}
+					/>
 				</div>
 			) : null}
 		</div>
