@@ -5,6 +5,8 @@ import { faker } from '@faker-js/faker';
 import Button from './Components/Button';
 
 const EditProfile = ({ getInfoState }) => {
+
+	// IMG 저장
 	const imgRef = useRef();
 	const [imgFile, setImgFile] = useState(faker.image.avatar())
 	const saveImgFile = () => {
@@ -16,6 +18,7 @@ const EditProfile = ({ getInfoState }) => {
 		};
 	};
 
+	// 모달창 밖에 클릭했을 떄
 	const wrapperRef = useRef(null);
 
 	const handleClickOutside = (event) => {

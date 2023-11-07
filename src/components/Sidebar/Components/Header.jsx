@@ -50,6 +50,8 @@ const Header = () => {
 					/>
 				</div>
 			</div>
+
+			{/* 모달 백그라운드 */}
 			<div
 				className={
 					isOpenSettingModal
