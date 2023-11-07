@@ -1,0 +1,34 @@
+.Voice_Container {
+  display: flex;
+  border-radius: 20px;
+  margin-top: 3vh;
+  width: 260px;
+  height: 55px;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.Voice_Img {
+  display: flex;
+  align-items: center;
+}
+
+.Voice_Timer {
+  margin-left: 12px;
+}
+
+#Voice_Incoming {
+  background-color: #e5e7eb;
+  margin-right: auto;
+  margin-left: 2vw;
+}
+
+#Voice_Outgoing {
+  background-color: #5395e9;
+  margin-left: auto;
+  margin-right: 2vw;
+}
+
+#Voice_Outgoing p {
+  color: white;
+}

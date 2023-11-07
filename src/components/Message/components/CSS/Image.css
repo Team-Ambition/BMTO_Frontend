@@ -1,0 +1,24 @@
+.Image_Container {
+  display: flex;
+  margin-top: 3vh;
+}
+
+.Image_Container :hover {
+    opacity: 0.5;
+  }
+
+.Image_Image {
+  width: 15vw;
+  height: 30vh;
+  border-radius: 20px;
+}
+
+#Image_Incoming {
+  margin-right: auto;
+  margin-left: 2vw;
+}
+
+#Image_Outgoing {
+  margin-left: auto;
+  margin-right: 2vw;
+}
