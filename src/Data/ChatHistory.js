@@ -1,4 +1,6 @@
-export default Chat_History = [
+import { faker } from "@faker-js/faker";
+
+const ChatHistory = [
   {
     type: "Msg",
     message: "Hi 👋🏻, How r u?",
@@ -52,3 +54,5 @@ export default Chat_History = [
     outgoing: false,
   },
 ];
+
+export default ChatHistory;
