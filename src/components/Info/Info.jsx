@@ -4,8 +4,10 @@ import { faker } from '@faker-js/faker';
 
 import GroupMember from '../../Data/GroupMember';
 import ChangeGroupImg from '../Modals/GroupModals/ChangeGroupImg';
+import ChangeGroupName from '../Modals/GroupModals/ChangeGroupName';
 
 const Info = () => {
+	// 이미지 변경모달 State
 	const [isOpenChageIMG, setOpenChangeIMG] = useState(false);
 	const ChangeIMG = () => {
 		setOpenChangeIMG(!isOpenChageIMG);
@@ -15,12 +17,23 @@ const Info = () => {
 		setOpenChangeIMG(State);
 	};
 
+	// 이름 변경모달 State
+	const [isOpenChageName, setOpenChangeName] = useState(false);
+	const ChangeName = () => {
+		setOpenChangeName(!isOpenChageIMG);
+	};
+
+	const getChangeNameState = (State) => {
+		setOpenChangeName(State);
+	};
+
 	return (
 		<div className='Info_Container'>
 			<div>
 				<p className='Info_Title'>More Infomation</p>
 
 				<div className='Info_Main'>
+					{/* 이미지 */}
 					<div className='Info_Group_IMG'>
 						<img src={faker.image.avatar()} alt='' />
 					</div>
@@ -29,6 +42,7 @@ const Info = () => {
 						<p>Group1</p>
 					</div>
 
+					{/* ChangeMdoals */}
 					<div className='Info_Change_Group_IMG'>
 						<p>Change Image</p>
 						<button
@@ -41,9 +55,15 @@ const Info = () => {
 
 					<div className='Info_Change_Group_Name'>
 						<p>Change Name</p>
-						<button className='Info_Change_Hover'>Change</button>
+						<button
+							className='Info_Change_Hover'
+							onClick={ChangeName}
+						>
+							Change
+						</button>
 					</div>
 
+					{/* ADD Members */}
 					<div>
 						<div className='Info_Add_Member'>
 							<p>Members</p>
@@ -51,6 +71,7 @@ const Info = () => {
 						</div>
 					</div>
 
+					{/* Member List */}
 					<div className='Info_Member_Container'>
 						{GroupMember.map((item) => (
 							<div className='Info_Member'>
@@ -61,6 +82,7 @@ const Info = () => {
 					</div>
 				</div>
 			</div>
+
 			<div className='Info_Divider'>
 				<p>Leave The Group</p>
 			</div>
@@ -68,15 +90,23 @@ const Info = () => {
 			{/* 모달 백그라운드 */}
 			<div
 				className={
-					isOpenChageIMG
+					isOpenChageIMG || isOpenChageName
 						? 'Info_Modal_Background_Open'
 						: 'Info_Modal_Background_Close'
 				}
 			></div>
 
+			{/* 이미지 변경 모달 */}
 			{isOpenChageIMG ? (
 				<div>
 					<ChangeGroupImg getChangeImgState={getChangeImgState} />
+				</div>
+			) : null}
+
+			{/* 이름 변경 모달 */}
+			{isOpenChageName ? (
+				<div>
+					<ChangeGroupName getChangeNameState={getChangeNameState}/>
 				</div>
 			) : null}
 		</div>
