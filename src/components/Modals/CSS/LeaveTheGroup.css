@@ -1,0 +1,54 @@
+.LeaveTheGroup_Container {
+  position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	width: 450px;
+	height: 280px;
+	transform: translate(-50%, -50%);
+	border-radius: 10px;
+	background: #f3f5f7;
+	box-shadow: 2px 4px 5px 3px rgba(0, 0, 0, 0.25);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.LeaveTheGroup_Main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: -50px;
+}
+
+.LeaveTheGroup_Main p:first-child {
+	font-size: 28px;
+	font-family: 'Sans_Bold';
+  margin-bottom: 20px;
+}
+
+.LeaveTheGroup_Main p:nth-child(2) {
+	font-size: 19px;
+	font-family: 'Sans_Light';
+}
+
+.LeaveTheGroup_Check {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.LeaveTheGroup_Check input {
+  transform: scale(1.5);
+  margin-right: 11px;
+}
+
+.LeaveTheGroup_Buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import '../CSS/ChangeGroupName.css';
+
 import Input from '../Components/input';
 import Button from '../Components/Button';
 
