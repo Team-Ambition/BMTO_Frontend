@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { faker } from '@faker-js/faker';
+import './CSS/Header.css'
 
 import { IoSettingsOutline } from 'react-icons/io5';
 import EditProfile from '../../Modals/EditProfile';

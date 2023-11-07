@@ -47,7 +47,7 @@ const LeaveTheGroup = ({ getLeaveTheGroupState }) => {
 			</div>
 
 			<div className='LeaveTheGroup_Buttons'>
-				<Button text={'Cancel'} type={'White'} />
+				<Button text={'Cancel'} type={'White'} onClickMethod={CloseModal} />
 				<Button text={'Leave The Group'} type={'Red'} />
 			</div>
 		</div>
