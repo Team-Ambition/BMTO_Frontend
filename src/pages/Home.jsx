@@ -5,8 +5,7 @@ import Header from "../components/Header/Header";
 import Chat from "../components/Sidebar/Chat";
 import Typing from "../components/Typing/Typing";
 import Info from "../components/Info/Info";
-import Voice from "../components/Message/components/Voice";
-import Message from "../components/Message/components/Message";
+import Message from "../components/Message/Components/Message";
 
 const Home = () => {
   const [isInfoOpen, setIsInfoOpen] = useState(false);
