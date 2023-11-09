@@ -4,7 +4,7 @@ import "./CSS/Message.css";
 
 import ChatHistory from "../../../Data/ChatHistory";
 
-const Message = ({ message, incoming, outgoing }) => {
+const Message = ({ message, from }) => {
   return (
     <div>
       <div className="Message_Container Message_Incoming">
