@@ -6,6 +6,7 @@ import Chat from "../components/Sidebar/Chat";
 import Typing from "../components/Typing/Typing";
 import Info from "../components/Info/Info";
 import Voice from "../components/Message/components/Voice";
+import Message from "../components/Message/components/Message";
 
 const Home = () => {
   const [isInfoOpen, setIsInfoOpen] = useState(false);
@@ -27,7 +28,7 @@ const Home = () => {
       <div className="Home_Main">
         <Header getInfoState={getInfoState} isDirectGroup={isDirectGroup} />
         <div className="Home_Chatting">
-          <Voice />
+          <Message />
         </div>
         <Typing isInfoOpen={isInfoOpen} />
       </div>

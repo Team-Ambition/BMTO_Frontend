@@ -1,11 +1,12 @@
 .Image_Container {
   display: flex;
-  margin-top: 3vh;
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
 }
 
 .Image_Container :hover {
-    opacity: 0.5;
-  }
+  opacity: 0.5;
+}
 
 .Image_Image {
   width: 15vw;
