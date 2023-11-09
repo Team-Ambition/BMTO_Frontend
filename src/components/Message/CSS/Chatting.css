@@ -1,0 +1,21 @@
+.Chatting_Divider {
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .Chatting_Divider::before,
+  .Chatting_Divider::after {
+    content: "";
+    flex-grow: 1;
+  }
+  
+  .Chatting_Divider_InnerText {
+    color: gray;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 4px;
+    padding-right: 5px;
+  }
