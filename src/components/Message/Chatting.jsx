@@ -1,12 +1,22 @@
 import React from "react";
 
-import "./CSS/Message.css";
+import "./CSS/Chatting.css";
 
-const Message = () => {
+import Image from "./components/Image";
+import Voice from "./components/Voice";
+import Message from "./components/Message";
 
-  return <div className="Chatting_Container">
-    
-  </div>;
+const Chatting = () => {
+  return (
+    <div className="Chatting_Container">
+      <div className="Chatting_Divider">
+        <div className="Chatting_Divider_InnerText">Today</div>
+      </div>
+      <div className="Chatting_Divider">
+        <div className="Chatting_Divider_InnerText">Yesterday</div>
+      </div>
+    </div>
+  );
 };
 
-export default Message;
+export default Chatting;
