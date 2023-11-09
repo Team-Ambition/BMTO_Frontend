@@ -24,14 +24,14 @@ const ChatHistory = [
     outgoing: true,
   },
   {
-    type: "MSG",
+    type: "Msg",
     message: "Ya sure, sending you a pic",
     incoming: true,
     outgoing: false,
   },
   {
-    type: "IMG",
-    img: faker.image.abstract(),
+    type: "Img",
+    img: faker.image.avatar(),
     incoming: true,
     outgoing: false,
   },
@@ -49,7 +49,8 @@ const ChatHistory = [
   },
   {
     type: "Voice",
-    link : "alsdfjklsdf",
+    link: "alsdfjklsdf",
+    time: "0:36",
     incoming: true,
     outgoing: false,
   },
