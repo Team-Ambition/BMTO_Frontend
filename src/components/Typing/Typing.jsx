@@ -1,7 +1,6 @@
 import React from "react";
 import { BsMic } from "react-icons/bs";
 import { CiImageOn } from "react-icons/ci";
-import { AiOutlinePaperClip } from "react-icons/ai";
 
 import "./CSS/Typing.css";
 
@@ -21,7 +20,6 @@ const Typing = ({ isInfoOpen }) => {
       <div className="Typing_Files">
         <BsMic size={25} className="Typing_File Typing_Icon" />
         <CiImageOn size={30} className="Typing_File Typing_Icon" />
-        <AiOutlinePaperClip size={30} className="Typing_Name Typing_Icon" />
       </div>
     </div>
   );
