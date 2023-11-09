@@ -1,0 +1,21 @@
+.Divider_Container {
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    font-size: 13px;
+    display: flex;
+  }
+  
+  .Divider::before,
+  .Divider::after {
+    content: "";
+    flex-grow: 1;
+  }
+  
+  .Divider_InnerText {
+    color: gray;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 4px;
+    padding-right: 5px;
+    text-align: center;
+  }

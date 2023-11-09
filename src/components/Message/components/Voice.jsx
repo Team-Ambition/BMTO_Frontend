@@ -2,7 +2,7 @@ import React from "react";
 
 import "./CSS/Voice.css";
 
-const Voice = () => {
+const Voice = ({ link, time, incoming, outgoing }) => {
   return (
     <div>
       <div className="Voice_Container" id="Voice_Incoming">

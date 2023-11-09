@@ -2,82 +2,17 @@ import React from "react";
 
 import "./CSS/Message.css";
 
-const Message = () => {
+import ChatHistory from "../../../Data/ChatHistory";
+
+const Message = ({ message, incoming, outgoing }) => {
   return (
     <div>
       <div className="Message_Container Message_Incoming">
-        <div className="Message_Text">
-          안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요
-        </div>
+        <div className="Message_Text">{message}</div>
       </div>
       <div className="Message_Container Message_Outgoing">
-        <div className="Message_Text">안녕하세요</div>
+        <div className="Message_Text">{message}</div>
       </div>
-      <div className="Message_Container Message_Incoming">
-        <div className="Message_Text">
-          안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요
-        </div>
-      </div>
-      <div className="Message_Container Message_Outgoing">
-        <div className="Message_Text">안녕하세요</div>
-      </div>
-      <div className="Message_Container Message_Incoming">
-        <div className="Message_Text">
-          안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요
-        </div>
-      </div>
-      <div className="Message_Container Message_Outgoing">
-        <div className="Message_Text">안녕하세요</div>
-      </div>
-      <div className="Message_Container Message_Incoming">
-        <div className="Message_Text">
-          안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요
-        </div>
-      </div>
-      <div className="Message_Container Message_Outgoing">
-        <div className="Message_Text">안녕하세요</div>
-      </div>
-      <div className="Message_Container Message_Incoming">
-        <div className="Message_Text">
-          안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요
-        </div>
-      </div>
-      <div className="Message_Container Message_Outgoing">
-        <div className="Message_Text">안녕하세요</div>
-      </div>
-      <div className="Message_Container Message_Incoming">
-        <div className="Message_Text">
-          안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요
-        </div>
-      </div>
-      <div className="Message_Container Message_Outgoing">
-        <div className="Message_Text">안녕하세요</div>
-      </div>
-      <div className="Message_Container Message_Incoming">
-        <div className="Message_Text">
-          안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요
-        </div>
-      </div>
-      <div className="Message_Container Message_Outgoing">
-        <div className="Message_Text">안녕하세요</div>
-      </div>
-      <div className="Message_Container Message_Incoming">
-        <div className="Message_Text">
-          안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요
-        </div>
-      </div>
-      <div className="Message_Container Message_Outgoing">
-        <div className="Message_Text">안녕하세요</div>
-      </div>
-      <div className="Message_Container Message_Incoming">
-        <div className="Message_Text">
-          안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요
-        </div>
-      </div>
-      <div className="Message_Container Message_Outgoing">
-        <div className="Message_Text">안녕하세요</div>
-      </div>
-      
     </div>
   );
 };

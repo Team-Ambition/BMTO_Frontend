@@ -3,7 +3,7 @@ import { faker } from "@faker-js/faker";
 
 import "./CSS/Image.css";
 
-const Image = () => {
+const Image = ({ img, incoming, outgoing }) => {
   return (
     <div>
       <div className="Image_Container">
