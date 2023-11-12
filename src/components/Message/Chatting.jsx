@@ -17,8 +17,7 @@ const Chatting = () => {
             return (
               <Message
                 message={item.message}
-                incoming={item.incoming}
-                outgoing={item.outgoing}
+                from={item.from}
               />
             );
           case "Img":
@@ -26,7 +25,6 @@ const Chatting = () => {
               <Image
                 img={item.img}
                 incoming={item.incoming}
-                outgoing={item.outgoing}
               />
             );
           case "Voice":
@@ -35,7 +33,6 @@ const Chatting = () => {
                 link={item.link}
                 time={item.time}
                 incoming={item.incoming}
-                outgoing={item.outgoing}
               />
             );
           case "Divider":
@@ -45,7 +42,6 @@ const Chatting = () => {
               <Message
                 message={item.message}
                 incoming={item.incoming}
-                outgoing={item.outgoing}
               />
             );
         }

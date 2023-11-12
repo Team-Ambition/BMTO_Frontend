@@ -1,0 +1,19 @@
+.ClickImage_Container {
+    z-index: 1;
+}
+.ClickImage_Image {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 484px;
+  height: 484px;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  background: #f3f5f7;
+  box-shadow: 2px 4px 5px 3px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+}

@@ -9,7 +9,7 @@ import Header from './Components/Header';
 import Searchbar from './Components/Searchbar';
 import DirectChatList from './DirectChatList';
 import GroupChatList from './GroupChatList';
-import Search from './Components/Search';
+import Search from '../Modals/Search';
 
 const Chat = ({ getDirectGroup }) => {
 	const [chatType, setChatType] = useState('Direct');
