@@ -21,7 +21,11 @@ const Header = ({ getInfoState, isDirectGroup }) => {
 	return (
 		<div
 			className='Header_Container'
-			id={isInfoModal ? 'StateInfoFalse' : 'StateInfoTrue'}
+			id={
+				isInfoModal || isDirectGroup === 'Direct'
+					? 'StateInfoFalse'
+					: 'StateInfoTrue'
+			}
 		>
 			<div className='Header_Profile'>
 				<img src={faker.image.avatar()} alt='' className='Header_Img' />
