@@ -4,14 +4,16 @@
 	background-color: white;
 	justify-content: space-between;
 	border-bottom: solid 1.5px #d9d9d9;
-  animation: fadein 2ms;
 }
 
 #StateInfoTrue {
   width: 58vw;
+	transition: 0.5s ease;
 }
+
 #StateInfoFalse {
   width: 78vw;
+  transition: 0.5s ease;
 }
 
 .Header_Profile {
