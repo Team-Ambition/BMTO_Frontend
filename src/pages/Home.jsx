@@ -15,6 +15,7 @@ const Home = () => {
 	};
 
 	const [isDirectGroup, setIstDirectGroup] = useState(true);
+	console.log(isDirectGroup);
 
 	const getDirectGroup = (State) => {
 		setIstDirectGroup(State);
@@ -29,25 +30,37 @@ const Home = () => {
 					getInfoState={getInfoState}
 					isDirectGroup={isDirectGroup}
 				/>
-				<div
-					className={`Home_Chatting ${
-						isInfoOpen
-							? 'Home_Chatting_InfoTrue'
-							: 'Home_Chatting_InfoFalse'
-					}`}
-				>
-					<Chatting />
-				</div>
-				<Typing isInfoOpen={isInfoOpen} />
+				{isDirectGroup === 'Direct' ? (
+					<div
+						className={`Home_Chatting ${'Home_Chatting_InfoFalse'} `}
+					>
+						<Chatting />
+					</div>
+				) : (
+					<div
+						className={`Home_Chatting ${
+							isInfoOpen
+								? 'Home_Chatting_InfoTrue'
+								: 'Home_Chatting_InfoFalse'
+						} `}
+					>
+						<Chatting />
+					</div>
+				)}
+				<Typing isInfoOpen={isInfoOpen} isDirectGroup={isDirectGroup} />
 			</div>
 
-			<div
-				className={`Home_Chat_Info ${
-					isInfoOpen ? 'InfoTrue' : 'InfoFalse'
-				}`}
-			>
-				<Info />
-			</div>
+			{isDirectGroup === 'Direct' ? (
+				<div className={`Home_Chat_Info ${'InfoFalse'}`}></div>
+			) : (
+				<div
+					className={`Home_Chat_Info ${
+						isInfoOpen ? 'InfoTrue' : 'InfoFalse'
+					}`}
+				>
+					<Info />
+				</div>
+			)}
 		</div>
 	);
 };
