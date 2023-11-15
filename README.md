@@ -1,4 +1,5 @@
-# Project ChatApp
+# Project BMTO
+사용자들이 채팅할 수 있는 채팅앱
 
 커밋규칙
 <br>
