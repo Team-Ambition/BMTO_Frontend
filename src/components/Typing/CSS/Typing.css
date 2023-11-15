@@ -10,9 +10,11 @@
 
 #StateTypeTrue {
 	width: 56vw;
+  transition: 0.5s ease;
 }
 #StateTypeFalse {
 	width: 76vw;
+  transition: 0.5s ease;
 }
 
 .Typing_Input {

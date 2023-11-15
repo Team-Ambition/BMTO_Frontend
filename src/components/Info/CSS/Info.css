@@ -1,5 +1,4 @@
 .Info_Container {
-	animation: fadein 0.5s;
 	width: 20vw;
 	height: 100vh;
 	display: flex;
@@ -8,9 +7,6 @@
 	border-left: 1px solid #d9d9d9;
 }
 
-.Info_Container::before {
-	animation: fadeout 0.5s;
-}
 
 .Info_Title {
 	font-size: 25px;
@@ -158,24 +154,4 @@
 
 .Info_Modal_Background_Close {
 	display: none;
-}
-
-@keyframes fadein {
-	0% {
-		transform: translateX(100%);
-	}
-
-	100% {
-		transform: translateX(0);
-	}
-}
-
-@keyframes fadeout {
-	0% {
-		transform: translateX(-100%);
-	}
-
-	100% {
-		transform: translateX(0);
-	}
 }
