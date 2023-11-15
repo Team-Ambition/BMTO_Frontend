@@ -13,6 +13,7 @@ const Typing = ({ isInfoOpen }) => {
     <div
       className="Typing_Container"
       id={isInfoOpen ? "StateTypeTrue" : "StateTypeFalse"}
+      style={!isOpenedRecordModal ? { justifyContent: "space-between" } : null}
     >
       {isOpenedRecordModal ? (
         <Audio

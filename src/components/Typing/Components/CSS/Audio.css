@@ -1,0 +1,39 @@
+#voiceCancel {
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.voiceDone {
+  border-radius: 100px;
+  background-color: black;
+  width: 1vw;
+  height: 1vw;
+}
+.DoneAndTimer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+  background-color: #5395e9;
+  width: 65vw;
+  height: 4.5vh;
+  border-radius: 20px;
+}
+
+.DoneAndTimer img {
+  margin-left: 10px;
+  cursor: pointer;
+}
+#Timer {
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  width: 3vw;
+  margin-right: 10px;
+}
+
+#Send {
+  margin-left: 20px;
+  color: #5395e9;
+  cursor: pointer;
+}

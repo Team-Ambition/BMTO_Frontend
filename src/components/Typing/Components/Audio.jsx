@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 
+import "./CSS/Audio.css";
+
 function Audio({ isOpenedRecordModal, setIsOpenedRecordModal }) {
   // 타이머
   const [time, setTime] = useState(0);
@@ -126,8 +128,12 @@ function Audio({ isOpenedRecordModal, setIsOpenedRecordModal }) {
 
   return (
     <>
-      
-      <p id="Timer">{time}</p>
+      <img src="../../../../Img/VoiceCancel.svg" alt="" id="voiceCancel" />
+      <div className="DoneAndTimer">
+        <img src="../../../../Img/VoiceDone.svg" alt="" />
+        <p id="Timer">{time}</p>
+      </div>
+      <p id="Send">보내기</p>
     </>
   );
 }
