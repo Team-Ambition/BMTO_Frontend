@@ -1,44 +1,46 @@
 .Typing_Container {
-	border-radius: 50px;
-	height: 5vh;
-	border: solid #d9d9d9 3px;
-	display: flex;
-	align-items: center;
-	margin-bottom: 15px;
+  border-radius: 50px;
+  height: 5vh;
+  border: solid #d9d9d9 3px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  width: -webkit-fill-available;
 }
 
 #StateTypeTrue {
-	width: 56vw;
-  transition: 0.5s ease;
+  width: 100%;
+  transition: 2s ease;
 }
+
 #StateTypeFalse {
-	width: 76vw;
-  transition: 0.5s ease;
+  width: 76vw;
+  transition: 2s ease;
 }
 
 .Typing_Input {
-	margin-left: 20px;
+  margin-left: 20px;
 }
 
 .Typing_Input input {
-	border: none;
-	font-size: 22px;
+  border: none;
+  font-size: 22px;
 }
 
 #StateInputTrue {
-	width: 30vw;
+  width: 30vw;
 }
 #StateInputFalse {
-	width: 55vw;
+  width: 55vw;
 }
 
 .Typing_Input input:focus {
-	outline: none;
+  outline: none;
 }
 
 .Typing_Files {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
   margin-right: 2px;
 }
 
@@ -47,17 +49,18 @@
 }
 
 .Typing_Icon {
-	border-radius: 30%;
-	padding: 5px;
+  border-radius: 30%;
+  padding: 5px;
+  cursor: pointer;
 }
 
 .Typing_Icon:hover {
-	background-color: #ebebeb;
-	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
-		box-shadow 0.2s ease-in-out;
+  background-color: #ebebeb;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
 }
 
 .Typing_Icon:not(:hover) {
-	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
-		box-shadow 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
 }

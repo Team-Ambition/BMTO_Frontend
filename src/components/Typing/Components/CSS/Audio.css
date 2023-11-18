@@ -1,5 +1,5 @@
 #voiceCancel {
-  margin-left: 30px;
+  margin-left: 20px;
   cursor: pointer;
 }
 
@@ -9,15 +9,30 @@
   width: 1vw;
   height: 1vw;
 }
+
+@keyframes animateBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
 .DoneAndTimer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-left: 10px;
-  background-color: #5395e9;
-  width: 65vw;
+  width: 85%;
   height: 4.5vh;
   border-radius: 20px;
+  background: linear-gradient(to right, #5395e9, #3a7fc2);
+  background-size: 200% 100%;
+}
+
+.animate {
+  animation: animateBackground 60s linear forwards;
 }
 
 .DoneAndTimer img {
@@ -33,7 +48,9 @@
 }
 
 #Send {
-  margin-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
   color: #5395e9;
   cursor: pointer;
+  font-size: 15px;
 }

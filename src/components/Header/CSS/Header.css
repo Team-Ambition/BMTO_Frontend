@@ -7,13 +7,13 @@
 }
 
 #StateInfoTrue {
-  width: 58vw;
+	width: 58vw;
 	transition: 0.5s ease;
 }
 
 #StateInfoFalse {
-  width: 78vw;
-  transition: 0.5s ease;
+	width: 78vw;
+	transition: 0.5s ease;
 }
 
 .Header_Profile {
@@ -43,15 +43,17 @@
 .Header_Icon {
 	margin: 0.5vw;
 	color: #3a7fc2;
-  border-radius: 30%;
-  padding: 5px;
+	border-radius: 30%;
+	padding: 5px;
 }
 
 .Header_Icon:hover {
-  background-color: #ebebeb;
-	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+	background-color: #ebebeb;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+		box-shadow 0.2s ease-in-out;
 }
 
 .Header_Icon:not(:hover) {
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+		box-shadow 0.2s ease-in-out;
 }
