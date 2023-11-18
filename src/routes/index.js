@@ -31,6 +31,7 @@ export default function Router() {
       path: "/",
       children: [
         { path: "/", element: <Home /> },
+        { path: "typing", element: <Typing /> },
         { path: "/loading", element: <Loading /> },
         { path: "404", element: <Page404 /> },
         { path: "*", element: <Navigate to="/404" replace /> },
@@ -52,3 +53,5 @@ const FaceTalk = Loadable(lazy(() => import("../pages/FaceTalk")));
 const Login = Loadable(lazy(() => import("../pages/Login")));
 
 const Register = Loadable(lazy(() => import("../pages/Register")));
+
+const Typing = Loadable(lazy(() => import("../components/Typing/Typing")));
